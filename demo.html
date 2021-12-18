@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+  <style>
+      html,
+      body {
+        width: 800px;
+        height: 600px;
+        margin: 10px 0px 0px -400px;
+        position: fixed;
+        left: 50%;
+        min-width: 960px;
+        min-height: 640px;
+        background-color: black;
+
+        font-family: "Black Ops One";
+        text-align: center;
+        font-size: 31px;
+        color: white;
+      }
+      #lives{
+          visibility: hidden;
+      }
+  </style>
+  <link
+  href="https://fonts.googleapis.com/css?family=Black+Ops+One:regular"
+  rel="stylesheet"
+  type="text/css"
+/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/addons/p5.sound.min.js"></script>
+  <script src="scripts/help.js"></script>
+  <script src="scripts/Inmate.js"></script>
+  <script src="scripts/Guard.js"></script>
+  <script src="scripts/Exit.js"></script>
+  <script src="scripts/Dog.js"></script>
+  <script src="scripts/knife.js"></script>
+  <script src="scripts/Prisoner.js"></script>
+</head>
+<body>
+    <div id="helpCanvas">
+    </div>
+    <div id="messages">
+        <div id='main_msg'> Hit the space button to jump </div>
+        <div id='second_msg'> The guard makes you lose time</div>
+        <div id='lives'></div>
+    </div>
+    
+</body>
+</html>
